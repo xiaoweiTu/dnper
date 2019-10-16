@@ -1,0 +1,7 @@
+/data/redis/*
+/logs/nginx/*
+/logs/php/*
+/www/*
+/config/nginx/conf.d/oc.conf
+/config/nginx/conf.d/shc.conf
+/config/nginx/conf.d/kfc.conf

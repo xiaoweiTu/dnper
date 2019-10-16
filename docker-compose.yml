@@ -1,0 +1,47 @@
+version: '3'
+services:
+  p7:
+    build: $PWD/dockerfiles/php7
+    container_name: p7
+    networks:
+      - default
+    volumes:
+      - $PWD/config/php7/:/usr/local/etc
+      - $PWD/www/:/var/www/html/
+      - $PWD/logs/php/:/var/log/php
+  ng:
+    image: nginx:1.15.7-alpine
+    container_name: ng
+    volumes:
+      - $PWD/config/nginx/:/etc/nginx
+      - $PWD/www/:/var/www/html
+      - $PWD/logs/nginx:/var/log/nginx
+    links:
+      - p7:php7
+    ports:
+      - "80:80"
+    networks:
+      - default
+  redis:
+    image: redis:5.0.3-alpine
+    container_name: redis
+    volumes:
+      - $PWD/data/redis/:/data
+      - $PWD/config/redis/redis.conf:/etc/redis/redis.conf
+    ports:
+      - "6379:6379"
+    entrypoint: ["redis-server","/etc/redis/redis.conf"]
+    networks:
+      - default
+  es:
+    image: docker.elastic.co/elasticsearch/elasticsearch:6.7.0
+    container_name: es
+    environment:
+      - discovery.type=single-node
+    ports:
+      - "9200:9200"
+      - "9300:9300"
+    networks:
+      - default
+networks:
+  default:
