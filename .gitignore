@@ -1,4 +1,5 @@
 /data/redis/*
+/data/mysql/*
 /logs/nginx/*
 /logs/php/*
 /www/*
