@@ -21,14 +21,19 @@
 # 目录分层
 
 config/mysql : 数据库的配置文件
+
 config/nginx : nginx的配置文件
+
 config/php7  : php7的配置文件
+
 config/redis : redis5的配置文件
 
 data/redis : redis数据目录
+
 data/mysql : mysql数据目录
 
 logs/nginx : nginx日志
+
 logs/php   : php日志
 
 www : 项目文件
