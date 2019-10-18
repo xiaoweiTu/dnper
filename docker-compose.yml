@@ -8,7 +8,7 @@ services:
      volumes:
        - $PWD/config/php7/:/usr/local/etc
        - $PWD/www/:/var/www/html/
-       - $PWD/logs/php/:/var/log/php
+       - $PWD/logs/php/:/var/log/php/
   ng:
      image: nginx:1.15.7-alpine
      container_name: ng
