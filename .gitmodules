@@ -1,0 +1,3 @@
+[submodule "xhgui-branch"]
+	path = xhgui-branch
+	url = https://github.com/guanguans/dnmp-plus.git
