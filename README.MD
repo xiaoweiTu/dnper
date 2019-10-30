@@ -48,11 +48,15 @@ www : 项目文件
 
 mongo :
 
-ME_CONFIG_BASICAUTH_USERNAME: mongoexpress 
-ME_CONFIG_BASICAUTH_PASSWORD: mongoexpress 
+ME_CONFIG_BASICAUTH_USERNAME: mongoexpress
+
+ME_CONFIG_BASICAUTH_PASSWORD: mongoexpress
+
 ME_CONFIG_MONGODB_ADMINUSERNAME: mongoadmin 
+
 ME_CONFIG_MONGODB_ADMINPASSWORD: mongoadmin
 
 mysql:
+
  root:33063306
 
