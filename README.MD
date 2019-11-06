@@ -16,7 +16,7 @@
 
 克隆此项目后执行
 
-1. git clone --recursive 
+1. git clone --recursive https://github.com/xiaoweiTu/dnper.git
 2. 运行
 > docker-compose up -d
 
