@@ -16,7 +16,7 @@
 
 克隆此项目后执行
 
-1. 将你的项目文件放在克隆文件夹里的www中
+1. git clone --recursive 
 2. 运行
 > docker-compose up -d
 
