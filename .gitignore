@@ -9,3 +9,4 @@
 /config/nginx/conf.d/shc.conf
 /config/nginx/conf.d/kfc.conf
 /config/nginx/conf.d/admin.conf
+/config/nginx/conf.d/wms.conf

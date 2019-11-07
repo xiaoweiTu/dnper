@@ -1,5 +1,5 @@
-FROM daydayhitdoudou/p7:v4
+FROM daydayhitdoudou/p7:v5
 
-RUN chown -R www-data:www-data /var/www/html && chown -R www-data:www-data /var/www/xhgui -R
+RUN chown www-data:www-data /var/www -R
 
 EXPOSE 9000

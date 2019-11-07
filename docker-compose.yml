@@ -84,7 +84,7 @@ services:
     networks:
       - default
   mongo_express:
-    image: mongo-express
+    image: mongo-express:latest
     container_name: mongo-express
     restart: always
     ports:
