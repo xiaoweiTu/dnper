@@ -44,6 +44,8 @@ logs/php   : php日志
 
 www : 项目文件
 
+xhgui-branch: 性能检测平台
+
 # 相关密码
 
 mongo :
