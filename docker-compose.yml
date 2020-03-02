@@ -29,6 +29,16 @@ services:
        - "80:80"
      networks:
        - default
+  hyperf:
+     image: hyperf/hyperf:7.2-alpine-cli
+     container_name: hyperf
+     tty: true
+     volumes:
+       - $PWD/www/hyperf/:/hyperf
+     ports:
+       - "9501:9501"
+     networks:
+       - default
   redis:
     image: redis:5.0.3-alpine
     container_name: redis
